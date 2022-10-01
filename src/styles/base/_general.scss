@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.6;
+  background-color: #120358;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+ul {
+  list-style: none;
+}
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+main {
+  /* Чтобы занимал оставшееся пространство */
+  flex-grow: 1;
+}
+
+footer {
+  /* Чтобы footer не уменьшался */
+  flex-shrink: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-variation-settings: "wght"900;
+  line-height: 1.2;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  background: linear-gradient(180deg, #FF00A0 0%, #7A04EB 100%);
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: all .3s;
+}
+.btn:hover {
+  border-color: #fff;
+}
