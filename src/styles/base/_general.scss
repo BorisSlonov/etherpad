@@ -25,9 +25,11 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+
 ul {
   list-style: none;
 }
+
 .main-wrapper {
   display: flex;
   flex-direction: column;
@@ -94,9 +96,11 @@ h4 {
   padding: 10px 15px;
   background: linear-gradient(180deg, #FF00A0 0%, #7A04EB 100%);
   border-radius: 10px;
-  border: 1px solid transparent;
+  border: 2px solid #7A04EB;
   transition: all .3s;
+  box-shadow: 0 0 24px 0 #ff00a282;
 }
+
 .btn:hover {
   border-color: #fff;
 }
